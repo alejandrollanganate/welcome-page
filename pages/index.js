@@ -21,12 +21,12 @@ export default function Home() {
         <meta property="og:site_name" content="Club de software EPN"/>
         <meta property="og:description" content="Se parte de nuestra comunidad"/>
         <meta property="og:title" content="Club de software EPN" />
-        <meta property="og:image" content="https://www.club-software-epn.tech/portada-headers.png" />
+        <meta property="og:image" content="https://www.club-software-epn.tech/portada-headers.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@clubSoftwareEpn" />
         <meta name="twitter:title" content="Club de software EPN" />
         <meta name="twitter:description" content="Se parte de nuestra comunidad" />
-        <meta name="twitter:image" content="https://www.club-software-epn.tech/portada-headers.png" />
+        <meta name="twitter:image" content="https://www.club-software-epn.tech/portada-headers.jpg" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Prompt:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
