@@ -2,6 +2,7 @@ import Head from 'next/head'
 import ComputerIcon from '../components/ComputerIcon'
 import styles from '../styles/Home.module.css'
 import {AiFillFacebook, AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai'
+import NavBar from '../components/NavBar'
 
 export default function Home() {
   return (
@@ -20,28 +21,27 @@ export default function Home() {
         <meta property="og:site_name" content="Club de software EPN"/>
         <meta property="og:description" content="Se parte de nuestra comunidad"/>
         <meta property="og:title" content="Club de software EPN" />
-        <meta property="og:image" content="https://www.epn.edu.ec/wp-content/uploads/2010/09/DSC00179.jpg" />
+        <meta property="og:image" content="https://www.club-software-epn.tech/assets/portada-headers.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@clubSoftwareEpn" />
         <meta name="twitter:title" content="Club de software EPN" />
         <meta name="twitter:description" content="Se parte de nuestra comunidad" />
-        <meta name="twitter:image" content="https://www.epn.edu.ec/wp-content/uploads/2010/09/DSC00179.jpg" />
+        <meta name="twitter:image" content="https://www.club-software-epn.tech/assets/portada-headers.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Prompt:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Club de Software EPN
-        </h1>
-        <h2>Sitio web en construcción</h2>
-        <ComputerIcon height='25%'  className={styles.image}/>
-        <div className={styles.grid}>
-          <a target="_blank" href="https://forms.office.com/r/eULae9Pe5z" className={styles.card}>
+        <NavBar />
+        <hero className={styles.hero}>
+          <img className={styles.wordTitle} src='/assets/words.png'/>
+          <div className={styles.grid}>
             <h2>Sé parte de nuestra comunidad</h2>
-            <p>Aplica aquí</p>
-          </a>
-        </div>
+            <a target="_blank" href="https://forms.office.com/r/eULae9Pe5z" className={styles.card}>
+              <p>Aplica aquí</p>
+            </a>
+          </div>
+        </hero>
       </main>
       <footer className={styles.footer}>
       <div className={styles.socialContainer}>
