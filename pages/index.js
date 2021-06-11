@@ -7,6 +7,7 @@ import NavBar from '../components/NavBar'
 export default function Home() {
   return (
     <div className={styles.container}>
+      <div className={styles.background}></div>
       <Head>
         <title>Club de software EPN  | Home</title>
         <meta name="description" content="Un espacio creado por desarrolladores para desarrolladores" />
@@ -34,32 +35,31 @@ export default function Home() {
       <main className={styles.main}>
         <NavBar />
         <hero className={styles.hero}>
+        <div className={styles.grid}>
           <img className={styles.wordTitle} src='/assets/words.png'/>
-          <div className={styles.grid}>
-            <h2>Sé parte de nuestra comunidad</h2>
+            <h2>👉 Se parte de nuestra comunidad</h2>
             <a target="_blank" href="https://forms.office.com/r/eULae9Pe5z" className={styles.card}>
               <p>Aplica aquí</p>
             </a>
           </div>
+          <ComputerIcon className={styles.computerIcon} />
         </hero>
       </main>
       <footer className={styles.footer}>
-      <div className={styles.socialContainer}>
-        <a href='https://www.facebook.com/club.software.epn' target='_blank'>
-          <AiFillFacebook className={styles.socialIcon} fontSize='30px'/>
-        </a>
-
-        <a href='https://www.instagram.com/clubsoftwareepn/' target='_blank'>
-          <AiFillInstagram  className={styles.socialIcon} fontSize='30px'/>
-        </a>
-
-        <a href='https://twitter.com/clubSoftwareEpn' target='_blank'>
-          <AiOutlineTwitter className={styles.socialIcon} fontSize='30px'/>
-        </a>
-      </div>
-      <div>
-        De<span className={styles.flag}>🇪🇨</span>   con amor 💚  para todo el mundo
-      </div>
+        <div className={styles.socialContainer}>
+          <a href='https://www.facebook.com/club.software.epn' target='_blank'>
+            <AiFillFacebook className={styles.socialIcon} fontSize='30px'/>
+          </a>
+          <a href='https://www.instagram.com/clubsoftwareepn/' target='_blank'>
+            <AiFillInstagram  className={styles.socialIcon} fontSize='30px'/>
+          </a>
+          <a href='https://twitter.com/clubSoftwareEpn' target='_blank'>
+            <AiOutlineTwitter className={styles.socialIcon} fontSize='30px'/>
+          </a>
+        </div>
+        <div>
+          De<span className={styles.flag}>🇪🇨</span>   con amor 💚  para todo el mundo
+        </div>
       </footer>
     </div>
   )
