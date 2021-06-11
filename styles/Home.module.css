@@ -96,7 +96,8 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #b18fb3;
+  border: 2px solid #b18fb3;
+  border-radius: 12px;
   transition: color 0.15s ease, border-color 0.15s ease;
   transition: .3s;
   text-align: center;
@@ -105,10 +106,12 @@
 .card:hover,
 .card:focus,
 .card:active {
-  background: linear-gradient(45deg, rgb(35, 25, 37), rgb(35, 25, 37));
-  border-color: rgb(72, 7, 88);
+  background-color: #90DF14;
+  border-color: rgb(82, 187, 105);
+  text-shadow: 1px 1px #567961;
   transform: scale(1.1);
   cursor: pointer;
+  color: white;
 }
 
 .card p {
@@ -153,7 +156,8 @@
 }
 
 .anchorButton {
-  border: 1px solid #b18fb3;
+  border: 2px solid #b18fb3;
+  border-radius: 12px;
   padding: 10px 20px;
   transition: color 0.15s ease, border-color 0.15s ease;
   transition: .3s;
