@@ -178,6 +178,8 @@
 
 .wordTitle {
   margin: 1rem;
+  width: 500px;
+  max-width: 80%;
 }
 
 .computerIcon{
@@ -185,7 +187,7 @@
   min-width: 400px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -193,6 +195,14 @@
 
   .image {
     max-height: 200px;
+  }
+  .computerIcon{
+    display: none;
+  }
+
+  .grid h2{
+    text-align: center;
+    font-size: 1.4rem;
   }
 }
 
